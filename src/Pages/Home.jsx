@@ -1,7 +1,9 @@
+import Slider from "../Components/Slider";
+
 const Home = () => {
   return (
     <div>
-      <p className='bg-red-400'>This is home Page</p>
+      <Slider></Slider>
     </div>
   );
 };

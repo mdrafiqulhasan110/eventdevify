@@ -1,9 +1,13 @@
 import { Outlet } from "react-router-dom";
+import NavBar from "../Components/Navbar";
 
 const MainLayOut = () => {
   return (
-    <div className='w-[85%] mx-auto'>
-      <Outlet></Outlet>
+    <div>
+      <div className='md:w-[85%] mx-auto px-4 py-2'>
+        <NavBar></NavBar>
+        <Outlet></Outlet>
+      </div>
     </div>
   );
 };
