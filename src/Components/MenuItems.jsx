@@ -9,7 +9,7 @@ const MenuItems = (
       <NavLink to={"/quotation"}>Quotations</NavLink>
     </li>
     <li>
-      <NavLink to={"/events"}>Events</NavLink>
+      <NavLink to={"/event"}>Event</NavLink>
     </li>
   </>
 );

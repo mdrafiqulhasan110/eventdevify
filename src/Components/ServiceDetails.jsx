@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import SaveQoutation from "../Utility/LocalQoutation";
 
 const ServiceDetails = ({ id }) => {
   const [service, setService] = useState([]);
@@ -50,23 +51,23 @@ const ServiceDetails = ({ id }) => {
       </div>
       <div>
         <p className='p-0 py-2 text-2xl text-[#50b8e7] font-bold'>Interested?</p>
-        <form>
-          <div className='form-control'>
-            <div className='input-group'>
-              <input
-                type='email'
-                placeholder='Your E-mail'
-                className='input input-bordered flex-grow'
-                required
-              />
-              <input
-                type='submit'
-                value='Get Quote'
-                className='btn btn-info'
-              ></input>
-            </div>
+
+        <div className='form-control'>
+          <div className='input-group'>
+            <input
+              type='email'
+              placeholder='Your E-mail'
+              className='input input-bordered flex-grow'
+              required
+            />
+            <button
+              onClick={() => SaveQoutation(id)}
+              className='btn btn-info'
+            >
+              Get Quote
+            </button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );

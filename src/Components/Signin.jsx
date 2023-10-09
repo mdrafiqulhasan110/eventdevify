@@ -1,14 +1,31 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Signin = () => {
+  const navigate = useNavigate();
   const { signIn, loginGoogle } = useContext(AuthContext);
   const handleSubmit = (e) => {
     e.preventDefault();
     const pass = e.target.pass.value;
     const email = e.target.email.value;
-    signIn(email, pass);
+    signIn(email, pass)
+      .then((result) => {
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
+  const googleSignin = () => {
+    loginGoogle()
+      .then((result) => {
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
@@ -53,7 +70,7 @@ const Signin = () => {
             <ul className='-mx-2 mb-12 flex justify-between'>
               <li className='w-full px-2'>
                 <button
-                  onClick={() => loginGoogle()}
+                  onClick={googleSignin}
                   className='btn hover:bg-[#D64937] bg-[#D64937] text-white w-full'
                   type='submit'
                 >

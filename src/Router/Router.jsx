@@ -5,6 +5,10 @@ import Home from "../Pages/Home";
 import ServiceDetailsPage from "../Pages/ServiceDetailsPage";
 import Signin from "../Components/Signin";
 import Signup from "../Components/Signup";
+import EventDetailsPage from "../Pages/EventDetailsPage";
+import QuotationPage from "../Pages/QuotationPage";
+import EventPage from "../Pages/EventPage";
+import PrivateRoute from "../Components/PrivateRoute";
 
 const Router = createBrowserRouter([
   {
@@ -18,19 +22,35 @@ const Router = createBrowserRouter([
       },
       {
         path: "/services/:id",
-        element: <ServiceDetailsPage />,
+        element: (
+          <PrivateRoute>
+            <ServiceDetailsPage />
+          </PrivateRoute>
+        ),
       },
       {
-        path: "/",
-        element: <Home></Home>,
+        path: "/events/:id",
+        element: (
+          <PrivateRoute>
+            <EventDetailsPage />
+          </PrivateRoute>
+        ),
       },
       {
-        path: "/",
-        element: <Home></Home>,
+        path: "/event",
+        element: (
+          <PrivateRoute>
+            <EventPage />
+          </PrivateRoute>
+        ),
       },
       {
-        path: "/",
-        element: <Home></Home>,
+        path: "/quotation",
+        element: (
+          <PrivateRoute>
+            <QuotationPage></QuotationPage>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/signin",

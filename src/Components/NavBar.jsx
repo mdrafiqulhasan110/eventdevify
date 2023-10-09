@@ -21,7 +21,14 @@ export default function NavBar() {
           <ul className='menu menu-horizontal px-1 gap-1'>{MenuItems}</ul>
         </div>
         <div className='navbar-end flex gap-4'>
-          {user && <p>{user.displayName}</p>}
+          {user && (
+            <p
+              className='
+          hidden md:block'
+            >
+              {user.displayName}
+            </p>
+          )}
 
           {user ? (
             <button
