@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Signin = () => {
+  const { signIn, loginGoogle } = useContext(AuthContext);
   const handleSubmit = (e) => {
     e.preventDefault();
-    const name = e.target.name.value;
+    const pass = e.target.pass.value;
     const email = e.target.email.value;
+    signIn(email, pass);
   };
 
   return (
@@ -49,6 +53,7 @@ const Signin = () => {
             <ul className='-mx-2 mb-12 flex justify-between'>
               <li className='w-full px-2'>
                 <button
+                  onClick={() => loginGoogle()}
                   className='btn hover:bg-[#D64937] bg-[#D64937] text-white w-full'
                   type='submit'
                 >

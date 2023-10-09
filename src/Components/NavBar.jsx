@@ -1,8 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineBars } from "react-icons/ai";
 import MenuItems from "./MenuItems";
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 export default function NavBar() {
+  const { user, logOut } = useContext(AuthContext);
+
   return (
     <div>
       <div className='navbar p-0 border-b border-[#50b8e7] border-opacity-50 mb-4'>
@@ -16,10 +20,21 @@ export default function NavBar() {
         <div className='navbar-center hidden lg:flex'>
           <ul className='menu menu-horizontal px-1 gap-1'>{MenuItems}</ul>
         </div>
-        <div className='navbar-end'>
-          <NavLink to={"/signin"}>
-            <button className='btn btn-info hidden lg:flex text-white'>Sign In</button>
-          </NavLink>
+        <div className='navbar-end flex gap-4'>
+          {user && <p>{user.displayName}</p>}
+
+          {user ? (
+            <button
+              onClick={() => logOut()}
+              className='btn btn-info  lg:flex text-white'
+            >
+              Sign Out
+            </button>
+          ) : (
+            <NavLink to={"/signin"}>
+              <button className='btn btn-info  lg:flex text-white'>Sign In</button>
+            </NavLink>
+          )}
 
           <div className='lg:hidden'>
             <div className='drawer'>

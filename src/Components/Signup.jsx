@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
+import { updateProfile } from "firebase/auth";
 
 const Signup = () => {
+  const { createUser, loginGoogle } = useContext(AuthContext);
   const [strength, setstrength] = useState(false);
   const [length, setlength] = useState(false);
   const [character, setcharacter] = useState(false);
@@ -14,6 +17,21 @@ const Signup = () => {
     const email = e.target.email.value;
     const pass = e.target.pass.value;
     console.log(name, image, email, pass);
+
+    if (length && character && special) {
+      createUser(email, pass)
+        .then((result) => {
+          console.log(result.user);
+          updateProfile(result.user, {
+            displayName: name,
+            photoURL: image,
+          });
+          console.log(result.user);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
   };
 
   const passwordCheck = (e) => {
@@ -99,6 +117,7 @@ const Signup = () => {
             <ul className='-mx-2 mb-12 flex justify-between'>
               <li className='w-full px-2'>
                 <button
+                  onClick={() => loginGoogle()}
                   className='btn hover:bg-[#D64937] bg-[#D64937] text-white w-full'
                   type='submit'
                 >
