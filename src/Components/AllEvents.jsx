@@ -21,11 +21,12 @@ const AllEvents = () => {
         </span>
       </h1>
       <div className='grid grid-cols-1 xl:grid-cols-2 gap-8 auto-rows-fr'>
-        {events.map((event) => {
+        {events.map((event, index) => {
           return (
             <Event
               key={event.id}
               service={event}
+              index={index}
             ></Event>
           );
         })}

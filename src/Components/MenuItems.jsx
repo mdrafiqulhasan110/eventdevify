@@ -5,6 +5,12 @@ const MenuItems = (
     <li>
       <NavLink to={"/"}>Home</NavLink>
     </li>
+    <li>
+      <NavLink to={"/quotation"}>Quotations</NavLink>
+    </li>
+    <li>
+      <NavLink to={"/events"}>Events</NavLink>
+    </li>
   </>
 );
 

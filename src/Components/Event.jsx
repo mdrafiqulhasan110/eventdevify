@@ -1,8 +1,13 @@
-const Event = ({ service }) => {
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
+const Event = ({ service, index }) => {
   const { event_id, event_name, event_date, event_location, event_description, event_image_url, entry_fee } = service;
   return (
     <div>
-      <div className='card min-h-full lg:card-side bg-base-100 shadow-xl'>
+      <div className={`card min-h-full lg:card-side bg-base-100 shadow-xl`}>
         <figure className='min-w-[40%] lg:max-w-[40%]'>
           <div className='relative w-full'>
             <img

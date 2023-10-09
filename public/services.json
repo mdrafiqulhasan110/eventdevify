@@ -1,58 +1,64 @@
 [
-    {
+  {
       "id": 1,
       "service_name": "Tech Conference Planning",
-      "description": "We specialize in organizing and managing technology and development-related conferences. From securing venues to coordinating speakers and logistics, we ensure your conference is a success.",
+      "short_description": "Experts in tech conference planning for developers. From venues to speakers, we ensure success.",
+      "description": "We specialize in organizing and managing technology and development-related conferences. Our team excels in planning tech conferences that engage developers, IT professionals, and industry experts. From securing ideal venues to coordinating renowned speakers and managing event logistics, we are your trusted partners in ensuring your conference is a resounding success.\n\nWith a flexible price range of $1500 - $3500 and event durations ranging from 1 to 5 days, we offer tailored solutions to meet your budget and scheduling needs. Our comprehensive services include crafting detailed event schedules, handling speaker management, booking suitable venues, and providing marketing support to maximize your conference's reach. Trust us to make your tech conference an exceptional and informative experience.",
       "price_range": "$1500 - $3500",
       "duration": "1-5 days",
       "target_audience": "Developers, IT professionals, industry experts",
       "deliverables": "Event schedule, speaker management, venue booking, marketing support",
       "image_url": "https://images.unsplash.com/photo-1550305080-4e029753abcf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
-    },
-    {
+  },
+  {
       "id": 2,
       "service_name": "Hackathon Coordination",
-      "description": "We excel at planning and executing hackathons that foster innovation and collaboration. Our team handles everything from concept to execution.",
+      "short_description": "Experts in hackathon planning, fostering innovation. From concept to execution, we handle it all.",
+      "description": "We excel at planning and executing hackathons that foster innovation and collaboration. Our experienced team takes care of every aspect, from conceptualization to flawless execution. Whether you're a group of developers, programmers, or a startup looking to organize a hackathon, we're here to ensure your event's success.\n\nOur price range of $1200 - $4200 and event durations of 1-3 days offer flexibility to match your budget and timeline. Our comprehensive services cover event concept development, seamless venue setup, efficient participant registration, and assembling a qualified judging panel. With our expertise, your hackathon will serve as a hub of creativity, learning, and spirited competition.",
       "price_range": "$1200 - $4200",
       "duration": "1-3 days",
       "target_audience": "Developers, programmers, startups",
       "deliverables": "Event concept, venue setup, participant registration, judging panel",
       "image_url": "https://images.unsplash.com/photo-1520110120835-c96534a4c984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80"
-    },
-    {
+  },
+  {
       "id": 3,
-      "service_name": "Developer Workshop and Training Events",
-      "description": "We design and manage workshops and training sessions on various development topics. These events provide hands-on learning experiences for your audience.",
+      "service_name": "Developer Workshop and Training",
+      "short_description": "Design and manage workshops for developers. Hands-on learning experiences for software enthusiasts.",
+      "description": "We specialize in designing and managing workshops and training sessions on various development topics. Our events offer hands-on learning experiences for your target audience, including software developers, tech enthusiasts, and students. With our expert guidance, you can create informative and engaging workshops that leave a lasting impact.\n\nOur price range of $2000 - $4500 and event durations ranging from half-day to multiple days provide flexibility to meet your budget and scheduling requirements. Our comprehensive services encompass curriculum design, trainer selection, materials procurement, and efficient logistical support. Whether you're aiming to upskill your workforce or educate a broader audience, we'll ensure your workshop is a resounding success.",
       "price_range": "$2000 - $4500",
       "duration": "Half-day to multiple days",
       "target_audience": "Software developers, tech enthusiasts, students",
       "deliverables": "Curriculum design, trainer selection, materials, logistics",
       "image_url": "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-    },
-    {
+  },
+  {
       "id": 4,
       "service_name": "Tech Networking Meetups",
-      "description": "We organize networking events for professionals in the tech and development industry, helping them connect, share ideas, and build valuable relationships.",
+      "short_description": "Organize tech networking events for professionals. Connect, share ideas, and build valuable relationships.",
+      "description": "We specialize in organizing networking events for professionals in the tech and development industry. Our goal is to bring together developers, entrepreneurs, and industry leaders to connect, share ideas, and build valuable relationships. Whether you're looking to expand your professional network or seek potential collaborations, our tech networking meetups provide the ideal platform.\n\nWith a price range of $1000 - $3000 and event durations of 1-3 hours, our events are designed for convenience and effectiveness. Our services encompass event planning, venue booking, and engaging attendee activities to ensure meaningful interactions. Join our tech networking meetups to forge new connections and stay at the forefront of industry trends.",
       "price_range": "$1000 - $3000",
       "duration": "1-3 hours",
       "target_audience": "Developers, entrepreneurs, industry leaders",
       "deliverables": "Event planning, venue booking, attendee engagement activities",
       "image_url": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-    },
-    {
+  },
+  {
       "id": 5,
       "service_name": "Tech Webinar Management",
-      "description": "We handle the end-to-end process of hosting webinars on technology and development-related topics, including content creation, promotion, and technical support.",
+      "short_description": "Comprehensive tech webinar services. From content creation to technical support, we handle it all.",
+      "description": "We specialize in managing end-to-end tech webinars on technology and development-related topics. Our comprehensive services cover content creation, technical setup, promotion, and registration management. Whether you're targeting an online community, professionals, or tech enthusiasts, we have the expertise to make your webinar a success.\n\nWith a price range of $1800 - $4000 and event durations of 1-2 hours, our webinars offer flexibility and efficiency. We tailor the content to your audience's needs, ensure seamless technical execution, and promote the event to maximize participation. Trust us to deliver engaging and informative tech webinars that leave a lasting impact.",
       "price_range": "$1800 - $4000",
       "duration": "1-2 hours",
       "target_audience": "Online community, professionals, enthusiasts",
       "deliverables": "Content creation, technical setup, promotion, registration management",
       "image_url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
-    },
-    {
+  },
+  {
       "id": 6,
-      "service_name": "Product Launch Events for Tech Companies",
-      "description": "We specialize in organizing product launch events for tech companies. Our services cover everything from event planning to product presentations.",
+      "service_name": "Product Launch for Tech Companies",
+      "short_description": "Experts in organizing product launch events for tech companies. From strategy to media coverage, we handle it all.",
+      "description": "We specialize in organizing product launch events tailored to the unique needs of tech companies, startups, and investors. Our comprehensive services cover event strategy, venue selection, product presentation, and media coverage. Whether you're introducing a groundbreaking product or seeking investment, our team ensures a successful launch event that leaves a lasting impression.\n\nWith a price range of $2500 - $5000 and event durations ranging from half-day to a full day, we offer flexible options to match your goals and budget. Our expertise in event planning and media relations ensures your product launch receives the attention it deserves. Trust us to make your tech company's product launch a memorable and impactful experience.",
       "price_range": "$2500 - $5000",
       "duration": "Half-day to full day",
       "target_audience": "Tech companies, startups, investors",
