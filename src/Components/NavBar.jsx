@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AiOutlineBars } from "react-icons/ai";
 import MenuItems from "./MenuItems";
 
@@ -17,7 +17,9 @@ export default function NavBar() {
           <ul className='menu menu-horizontal px-1 gap-1'>{MenuItems}</ul>
         </div>
         <div className='navbar-end'>
-          <a className='btn bg-[#50b8e7] text-white hidden lg:flex'>Login</a>
+          <NavLink to={"/signin"}>
+            <button className='btn btn-info hidden lg:flex text-white'>Sign In</button>
+          </NavLink>
 
           <div className='lg:hidden'>
             <div className='drawer'>
