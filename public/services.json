@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "service_name": "Tech Conference Planning",
+      "description": "We specialize in organizing and managing technology and development-related conferences. From securing venues to coordinating speakers and logistics, we ensure your conference is a success.",
+      "price_range": "$1500 - $3500",
+      "duration": "1-5 days",
+      "target_audience": "Developers, IT professionals, industry experts",
+      "deliverables": "Event schedule, speaker management, venue booking, marketing support",
+      "image_url": "https://images.unsplash.com/photo-1550305080-4e029753abcf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+    },
+    {
+      "id": 2,
+      "service_name": "Hackathon Coordination",
+      "description": "We excel at planning and executing hackathons that foster innovation and collaboration. Our team handles everything from concept to execution.",
+      "price_range": "$1200 - $4200",
+      "duration": "1-3 days",
+      "target_audience": "Developers, programmers, startups",
+      "deliverables": "Event concept, venue setup, participant registration, judging panel",
+      "image_url": "https://images.unsplash.com/photo-1520110120835-c96534a4c984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80"
+    },
+    {
+      "id": 3,
+      "service_name": "Developer Workshop and Training Events",
+      "description": "We design and manage workshops and training sessions on various development topics. These events provide hands-on learning experiences for your audience.",
+      "price_range": "$2000 - $4500",
+      "duration": "Half-day to multiple days",
+      "target_audience": "Software developers, tech enthusiasts, students",
+      "deliverables": "Curriculum design, trainer selection, materials, logistics",
+      "image_url": "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+    },
+    {
+      "id": 4,
+      "service_name": "Tech Networking Meetups",
+      "description": "We organize networking events for professionals in the tech and development industry, helping them connect, share ideas, and build valuable relationships.",
+      "price_range": "$1000 - $3000",
+      "duration": "1-3 hours",
+      "target_audience": "Developers, entrepreneurs, industry leaders",
+      "deliverables": "Event planning, venue booking, attendee engagement activities",
+      "image_url": "https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": 5,
+      "service_name": "Tech Webinar Management",
+      "description": "We handle the end-to-end process of hosting webinars on technology and development-related topics, including content creation, promotion, and technical support.",
+      "price_range": "$1800 - $4000",
+      "duration": "1-2 hours",
+      "target_audience": "Online community, professionals, enthusiasts",
+      "deliverables": "Content creation, technical setup, promotion, registration management",
+      "image_url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+    },
+    {
+      "id": 6,
+      "service_name": "Product Launch Events for Tech Companies",
+      "description": "We specialize in organizing product launch events for tech companies. Our services cover everything from event planning to product presentations.",
+      "price_range": "$2500 - $5000",
+      "duration": "Half-day to full day",
+      "target_audience": "Tech companies, startups, investors",
+      "deliverables": "Event strategy, venue selection, product presentation, media coverage",
+      "image_url": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1112&q=80"
+    }
+  ]
+  

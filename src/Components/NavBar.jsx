@@ -29,10 +29,10 @@ export default function NavBar() {
               <div className='drawer-content'>
                 {/* Page content here */}
                 <label htmlFor='my-drawer'>
-                  <AiOutlineBars />{" "}
+                  <AiOutlineBars />
                 </label>
               </div>
-              <div className='drawer-side'>
+              <div className='drawer-side z-10 '>
                 <label
                   htmlFor='my-drawer'
                   aria-label='close sidebar'
