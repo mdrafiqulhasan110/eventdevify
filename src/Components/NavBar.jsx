@@ -22,18 +22,42 @@ export default function NavBar() {
         </div>
         <div className='navbar-end flex gap-4'>
           {user && (
-            <p
-              className='
+            <>
+              <div className='dropdown dropdown-end'>
+                <label
+                  tabIndex={0}
+                  className='btn btn-ghost btn-circle avatar'
+                >
+                  <div className='w-10 rounded-full'>
+                    <img src={user?.photoURL ? user.photoURL : "https://static-00.iconduck.com/assets.00/user-avatar-icon-512x512-vufpcmdn.png"} />
+                  </div>
+                </label>
+                <ul
+                  tabIndex={0}
+                  className='mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52'
+                >
+                  <li>
+                    <p>{user.displayName}</p>
+                  </li>
+                  <li onClick={() => logOut()}>
+                    {" "}
+                    <a>Sign Out</a>{" "}
+                  </li>
+                </ul>
+              </div>
+              <p
+                className='
           hidden md:block'
-            >
-              {user.displayName}
-            </p>
+              >
+                {user.displayName}
+              </p>
+            </>
           )}
 
           {user ? (
             <button
               onClick={() => logOut()}
-              className='btn btn-info  lg:flex text-white'
+              className='btn btn-info hidden  lg:flex text-white'
             >
               Sign Out
             </button>

@@ -3,12 +3,16 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import { NavLink } from "react-router-dom";
 // ..
 AOS.init();
+AOS.refresh();
 
 const Event = ({ service, index }) => {
   const { event_id, event_name, event_date, event_location, event_description, event_image_url, entry_fee } = service;
   return (
-    <div data-aos='fade-up-right'>
-      <div className={`card min-h-full lg:card-side bg-base-100 shadow-xl`}>
+    <div>
+      <div
+        data-aos='fade-up-right'
+        className={`card min-h-full lg:card-side bg-base-100 shadow-xl`}
+      >
         <figure className='min-w-[40%] lg:max-w-[40%]'>
           <div className='relative w-full'>
             <img

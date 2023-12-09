@@ -25,8 +25,8 @@ const EventList = () => {
               <th>Serial</th>
               <th>Event</th>
               <th>Date</th>
-              <th>Location</th>
-              <th>Price</th>
+              {/* <th>Location</th>
+              <th>Price</th> */}
               <th>Details</th>
             </tr>
           </thead>
@@ -38,8 +38,8 @@ const EventList = () => {
                   <th>{index + 1}</th>
                   <td>{item.event_name}</td>
                   <td>{item.event_date}</td>
-                  <td>{item.event_location}</td>
-                  <td>{item.entry_fee}</td>
+                  {/* <td>{item.event_location}</td>
+                  <td>{item.entry_fee}</td> */}
                   <td>
                     <NavLink to={`/events/${item.event_id}`}>
                       <button className='btn p-3 btn-info rounded-md w-full'>view</button>

@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { updateProfile } from "firebase/auth";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Signup = () => {
   const { createUser, loginGoogle } = useContext(AuthContext);
@@ -26,10 +28,10 @@ const Signup = () => {
             displayName: name,
             photoURL: image,
           });
-          console.log(result.user);
+          toast.success("User Registration Succesfull");
         })
         .catch((error) => {
-          console.error(error);
+          toast.error(error.code.slice(5, error.code.length));
         });
     }
   };
